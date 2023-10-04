@@ -16,7 +16,6 @@ class LoginPage(BasePage):
         else:
             assert False, "the url does not contain 'login'"
 
-
     def should_be_login_form(self):
         assert self.is_element_present(*LoginPageLocators.LOGIN_FORM), " login form is not presented"
 
